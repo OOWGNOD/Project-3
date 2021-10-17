@@ -8,65 +8,117 @@
     <link href="./css/Common.css" rel="stylesheet">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
     <link href="./css/jquery.fullPage.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-    <script src="inc/jquery.mb.YTPlayer.js"></script>
     <script src="./js/index.js"></script>
-    <script src="./js/cursor.js"></script>
+    <script src="./js/autotype.js"></script>
     <script src="./js/jquery.fullPage.js"></script>
+    <script src="./js/jquery.lettering-0.6.1.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
 </head>
 <body>
-    <div class="cursor">
-    </div>
-    
-    <div id="fullpage">
-
-        
-    <section class="section header">
-<header>
-
-    <div class="headInner">
-        
-        <figure>
-            <a>
-                <img src="./img/Logo2.svg" class="Logo" fill="#1d1d1d">
-            </a>
-        </figure>
-        <!-- <nav class="Theme-change">
-            <button class="btn-toggle">Toggle Dark-Mode</button>
-        </nav> -->
+    <div class="circle"></div>
+    <header class="main-header">
+        <div class="left">
     <ul class="gnb">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Project</a></li>
-        <li><a href="#">Contact</a></li>
+        <li  class="blur"><a href="#2">
+          <span>A</span>
+          <span>B</span>
+          <span>O</span>
+          <span>U</span>
+          <span>T</span>
+        </a></li>
+        <li  class="blur"><a href="#3">
+          <span>S</span>
+          <span>K</span>
+          <span>I</span>
+          <span>L</span>
+          <span>L</span>
+          <span>S</span>
+        </a></li>
+        <li class="blur"><a href="#4">
+          <span>P</span>
+          <span>R</span>
+          <span>O</span>
+          <span>J</span>
+          <span>E</span>
+          <span>C</span>
+          <span>T</span>
+        </a></li>
+        <li class="blur"><a href="#5">
+          <span>C</span>
+          <span>O</span>
+          <span>N</span>
+          <span>T</span>
+          <span>A</span>
+          <span>C</span>
+          <span>T</span>
+        </a></li>
     </ul>
-    <div class="scrolldown-wrapper">
-        <div class="scrolldown">
-            <svg height="30" width="10">
-                <circle class="scrolldown-p1" cx="5" cy="15" r="2" />
-                <circle class="scrolldown-p2" cx="5" cy="15" r="2" />
-            </svg>
-            <p>Follow me</p>
+</div>
+<div class="right">
+    <ul class="clfix">
+        <li class="naver">
+            <a href="#" target="_blank" aria-label="NaverEmail"></a>
+        <li class="insta">
+            <a herf="https://www.instagram.com/dongwoozzik/" aria-label="Instagram"><div class="insta"></a>
+            </li>
+                <li class="kakao">
+                    <a href="#" target="_blank" aria-label="KakaoTalk">
+                        <div class="kakao"></div>
+                    </a>
+                </li>
+    </ul>
+</div>
+    </header>
+    <aside class="common-aside">
+        <a href="#1" class="Logo"></a>
+        <p class="side-hello">hello i'm dongwoo</p>
+    </aside>
+    <div id="fullpage">
+    <section class="section">
+        <div class="scrolldown-wrapper">
+            <div class="scrolldown">
+                <svg height="30" width="10">
+                    <circle class="scrolldown-p1" cx="5" cy="15" r="2" />
+                    <circle class="scrolldown-p2" cx="5" cy="15" r="2" />
+                </svg>
+                <p>Follow me</p>
+            </div>
         </div>
+    
+    <div class="cover" data-aos="flip-right">
+      <div class="clickme"><p>"CLICK ANYWHERE TO START"</p></div>
+    <div class="text">
+        <p>YU DONG WOO Portfolio</p>
+        <p>
+          <span class="word wisteria">HTML</span>
+          <span class="word belize">Photoshop</span>
+          <span class="word pomegranate">CSS</span>
+          <span class="word green">Javascript</span>
+          <span class="word midnight">Premier</span>
+        </p>
+      </div>
     </div>
-    </div>
-    <nav class="bg_video" >
-        <div class="bg_container">
-        <iframe src="https://www.youtube.com/embed/dQiYnFQX3Qg?mute=1&loop=1&autoplay=1&controls=0" title="YouTube video player" frameborder="" allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
-    </div>
-    </nav>
-</header>
+
 </section>
 
 <section class="section">
     <article class=mid_wrapper_inner>
-        <figure class="About-left"><img src="img/OfficialMichael.png">
-        <figcaption><h2>유동우</h2><h3>@dongwoozzik</h3></figcaption>
-        </figure>
-        <div class="About-right">
-            <h3 class="hello"><span class="emoji">&#x1F44B;</span>반갑습니다 !</h3>
+        <div class="About-left">
+            <div class="My-Emojibox" data-aos="flip-left">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+    </div>
+        </div>
+        <div class="About-right" data-aos="fade-up-left"  data-aos-id="super-duper">
+            <div class="type-js headline">
+            <h3 class="hello">&#x1F44B;</span>반갑습니다 !</h3>
+        </div>
             <p class="inner-txt-01"><br>
             <span>퍼블리싱</span>하는 <span>디자이너</span><br>
             <span>디자인</span> 하는 <span>퍼블리셔</span><br>
@@ -75,142 +127,159 @@
             <p class="inner-txt-02">
                 <span>호기심</span>을 가지고 다양한 능력을 갖추기 위해<br>
                 정체되어 있지 않습니다.<br>
-                <span>유행</span>에 민감하게 반응하며<br>
-                최신기술을 놓치지 않기 위해 노력했습니다.
+                <span>유행</span>에 민감하게 반응하여<br>
+                최신기술을 놓치지 않기 위해 노력하겠습니다.
             </p>
             </div>
     </article>
 </section>
+
 <section class="section">
     <article class="mid-work">
-        <div>
-            <p class="work-txt-01">
-                제가 어떤일을 잘하는지 알려드릴게요
-            </p>
-            <div class="grid">
-                <section>
-                <h2>HTML/CSS</h2>
-                <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="200" height="200"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <circle class="circle-chart__background" stroke="#efefef" stroke-width="2" fill="none" cx="16.91549431"
-                        cy="16.91549431" r="15.91549431" />
-                    <circle class="circle-chart__circle" stroke="#fb8c00" stroke-width="2" stroke-dasharray="90,100"
-                        stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
-                    <g class="circle-chart__info">
-                        <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle"
-                            font-size="8">90%</text>
-                        <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle"
-                            font-size="2"></text>
-                    </g>
-                </svg>
-                <p>HTML, HTML5의 기본 구조를 이해하며<br> 웹표준 및 웹접근성을 항상 고려하여 마크업을 작성합니다.</p>
-                </section>
-                <section>
-                    <h2>JS/JQuery</h2>
-                    <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="200" height="200"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <circle class="circle-chart__background" stroke="#efefef" stroke-width="2" fill="none" cx="16.91549431"
-                            cy="16.91549431" r="15.91549431" />
-                        <circle class="circle-chart__circle" stroke="#fb8c00" stroke-width="2" stroke-dasharray="80,100"
-                            stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
-                        <g class="circle-chart__info">
-                            <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle"
-                                font-size="8">80%</text>
-                            <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle"
-                                font-size="2"></text>
-                        </g>
-                    </svg>
-                    <p>CSS의 기본 구조와 속성을 이해하며 외부 스타일 시트를 이용해<br> 다양한 구조와 스타일, 코드 구현 및 SASS(SCSS)를 통한 CSS작업또한 가능합니다.</p>
-                    </section>
-                    <section>
-                        <h2>Photoshop</h2>
-                        <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="200" height="200"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <circle class="circle-chart__background" stroke="#efefef" stroke-width="2" fill="none" cx="16.91549431"
-                                cy="16.91549431" r="15.91549431" />
-                            <circle class="circle-chart__circle" stroke="#fb8c00" stroke-width="2" stroke-dasharray="95,100"
-                                stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
-                            <g class="circle-chart__info">
-                                <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle"
-                                    font-size="8">95%</text>
-                                <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle"
-                                    font-size="2"></text>
-                            </g>
-                        </svg>
-                        <p>포토샵을 통한 대부분의 작업이 가능하며 DTX형식의 전개도 파일 수정 경험이있습니다.</p>
-                        </section>
-                        <section>
-                            <h2>XD/Ai/Premiere</h2>
-                            <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="200" height="200"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <circle class="circle-chart__background" stroke="#efefef" stroke-width="2" fill="none" cx="16.91549431"
-                                    cy="16.91549431" r="15.91549431" />
-                                <circle class="circle-chart__circle" stroke="#fb8c00" stroke-width="2" stroke-dasharray="80,100"
-                                    stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
-                                <g class="circle-chart__info">
-                                    <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle"
-                                        font-size="8">80%</text>
-                                    <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle"
-                                        font-size="2"></text>
-                                </g>
-                            </svg>
-                            <p>Ai를 통한 벡터화 작업,펜툴 작업이 가능하며<br>
-                                XD로 프토로타입 제작이 가능합니다.<br>프리미어와 에프터이펙트를 통한 유튜브 영상 제작 또한 가능합니다</p>
-                            </section>
-                </div>
+            <div class="Education" data-aos="fade-right">
+            <div class="my_img"></div>
+            <div class="Eduinner">
+            <h2 class="K-name">유동우</h2><span class="E-name">DONGWOO</span>
+            <p>Web desinger & Publisher</p>
+            <p>dongwoozzik@naver.com</p>
+            <h2 class="Edu">Education</h2>
+            <p>서울예술종합실용학교 성악과 편입</p>
+            <p>삼육대학교 성악과 중퇴</p>
+            <p>그린컴퓨터아카데미 </p>
         </div>
+        </div>
+            <div class="j-list-all">
+            <div class="j-list" data-aos="fade-down-left">
+                <img src="https://img.icons8.com/color/48/000000/html-5--v1.png"/>
+                <img src="https://img.icons8.com/color/48/000000/css3.png"/>
+                <p class="html">HTML/CSS</p>
+                
+                <svg viewBox="0 0 100 2" preserveAspectRatio="none" style="display: block; width: 100%;"><path d="M 0,1 L 100,1" stroke="transparent" stroke-width="4" fill-opacity="0"></path><path d="M 0,1 L 100,1" stroke="#fff" stroke-width="2" fill-opacity="0" style="stroke-dasharray: 95, 100; stroke-dashoffset: 20;"></path></svg>
+                </div>
+                <div class="j-list" data-aos="fade-left">
+                    <img src="https://img.icons8.com/color/48/000000/javascript--v1.png"/>
+                <img src="https://img.icons8.com/ios-filled/50/000000/jquery.png"/>
+                <p class="js">JS/JQuery</p>
+                
+                <svg viewBox="0 0 100 2" preserveAspectRatio="none" style="display: block; width: 100%;"><path d="M 0,1 L 100,1" stroke="transparent" stroke-width="4" fill-opacity="0"></path><path d="M 0,1 L 100,1" stroke="#fff" stroke-width="2" fill-opacity="0" style="stroke-dasharray: 80, 100; stroke-dashoffset: 20;"></path></svg>
+                </div>
+                <div class="j-list" data-aos="fade-left">
+                    <img src="https://img.icons8.com/color/48/000000/adobe-photoshop--v2.png"/>
+                    <img src="https://img.icons8.com/color/48/000000/adobe-illustrator--v1.png"/>
+                    <p class="ps">Photoshop/AI</p>
+                    
+                    <svg viewBox="0 0 100 2" preserveAspectRatio="none" style="display: block; width: 100%;"><path d="M 0,1 L 100,1" stroke="transparent" stroke-width="4" fill-opacity="0"></path><path d="M 0,1 L 100,1" stroke="#fff" stroke-width="2" fill-opacity="0" style="stroke-dasharray: 95, 100; stroke-dashoffset: 20;"></path></svg>
+                </div>
+                <div class="j-list" data-aos="fade-up-left">
+                    <img src="https://img.icons8.com/color/48/000000/adobe-xd.png"/>
+                    <img src="https://img.icons8.com/color/48/000000/adobe-premiere-pro--v1.png"/>
+                    <img src="https://img.icons8.com/color/48/000000/adobe-after-effects--v1.png"/>
+                    <p class="XD">XD/Premiere/AfterEffect</p>
+                  
+                    <svg viewBox="0 0 100 2" preserveAspectRatio="none" style="display: block; width: 100%;"><path d="M 0,1 L 100,1" stroke="transparent" stroke-width="4" fill-opacity="0"></path><path d="M 0,1 L 100,1" stroke="#fff" stroke-width="2" fill-opacity="0" style="stroke-dasharray: 80, 100; stroke-dashoffset: 20;"></path></svg>
+                </div>
+            </div>
     </article>
 </section>
+
 <section class="section">
     <article class="work-details">
-        <p>저의 작품을 보시겠어요?</p>
         <div class="quotes">
+        <p class="hello">Project</p>
+
             <div class="card">
-                <span class="img_container">
-                </span>
-              <div class="box box1">
-                <p>투썸플레이스 홈페이지를 새롭게 리뉴얼 해보았습니다. </p>
-                <a href="https://oowgnod.github.io/ttest/">투썸플레이스 리뉴얼페이지 <span>보러가기</span></a>
+              <div class="box box1" data-aos="flip-left">
+                  <div class="workimg-box workimg-box1"></div>
+                <p>투썸플레이스<br> 홈페이지 리뉴얼</p>
+                <div class="btn btn3"><a href="https://oowgnod.github.io/ttest/" target="blank">보러가기</a></div>
+
               </div>
               <div class="bg">
-                    <img src="./img/pfo1.png">
+                    <img src="./img/pfo1.jpg">
               </div>
             </div>
             <div class="card">
-              <div class="box box2">
-                <p>신세계면세점 클론코딩</p>
-                <a href="https://oowgnod.github.io/Dtest/">투썸플레이스 리뉴얼페이지 <span>보러가기</span></a>
+              <div class="box box2" data-aos="flip-down">
+                <div class="workimg-box workimg-box2"></div>
+                <p>신세계면세점<br> 클론코딩</p>
+                <div class="btn btn2"><a href="https://oowgnod.github.io/Dtest/" target="blank">보러가기</a></div>
+
               </div>
               <div class="bg">
                 <img src="./img/pfo2.png">
               </div>
             </div>
             <div class="card">
-              <div class="box box3">
-                <p> </p>
-                <a href="https://oowgnod.github.io/ttest/"> <span></span></a>
+              <div class="box box3" data-aos="flip-right">
+                <div class="workimg-box workimg-box3"></div>
+                <p>인쇄물 디자인</p>
+                <div class="btn btn1"><a href="" target="blank">보러가기</a></div>
               </div>
               <div class="bg">
                 <img src="./img/pfo3.png">
               </div>
             </div>
           </div>
+        </nav>
     </article>
 
 </section>
-<section class="section">
-<footer>
-    <div>
-        <p>저에 대해 궁금하시다면</p>
-        <h2>dongwoozzik@naver.com</h2>
 
+<section class="section">
+<footer class="footer" data-aos="zoom-out-up">
+    <div class="ft-left">
+        <h2>FaQ</h2>
+    <ul id="accordion" class="accordion">
+        <li>
+          <div class="link"><i class="fa fa-database"></i>자신에 대해 표현해주세요 !<i class="fa fa-chevron-down"></i></div>
+          <ul class="submenu">
+            <li><a href="#">머릿속으로 분석하는 버릇이 있고<br> 호기심이 많으며 무언가를 창작해 내는것을 즐기는 사람입니다!
+            </a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="link"><i class="fa fa-code"></i>성악을 전공하다가 이 일을 선택한 이유가 무엇인가요?<i class="fa fa-chevron-down"></i></div>
+          <ul class="submenu">
+            <li><a href="#">
+              성악은 편입 시험을 준비하던 막바지에 성대결절이 생기면서 그만두게 되었습니다.
+              중학교때 부터 게임의 스킨을 만들기 위해 포토샵을 공부했었고, 
+              포토샵으로 무언가를 만드는것에 재미를 느꼈고, 디자인에 대한 관심이 생겼습니다. 
+              하지만 디자인만으로는 머릿속으로 생각하는 것들을 구현해낼수 없다고 느끼던와중에
+              프론트엔드 개발이라는 것에 관심이 생기면서 이 일에 흥미를 느끼게 되었습니다
+            </a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="link"><i class="fa fa-mobile"></i>어떤일에 가장 자신있나요?<i class="fa fa-chevron-down"></i></div>
+          <ul class="submenu">
+            <li><a href="#">무언가를 분석하고 해석해내는것을 즐기고,
+              톡톡 튀는 아이디어로 저만의 해답을 이끌어 내는것에 자신있습니다.
+            </a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="link"><i class="fa fa-globe"></i>연락처가 궁금해요 !<i class="fa fa-chevron-down"></i></div>
+          <ul class="submenu">
+            <li><a href="#" target="blank">Email - dongwoozzik@naver.com</a></li>
+            <li><a href="#" target="blank">카카오톡 오픈채팅 - dongwoozzik</a></li>
+            <li><a href="#" target="blank">인스타그램 - @dongwoozzik</a></li>
+          </ul>
+        </li>
+      </ul>
+      
+</div>
+<div class="ft-right">
+    <div class="ft-right-inner">
+        <p>저에 대해 궁금하시다면</p>
+        <h2 class="rainbow-text">dongwoozzik@naver.com</h2>
         <p>어떠한 내용이라도 성심성의것 3일이내에 답장드리겠습니다!</p>
         </div>
-    <div>
-    <p>Thanks for visiting my Website.</p>
-    <p>Copyright ⓒ 2021. Dongwoo Yu All rights reserved.</p>
-    </div>
     
+</div>
+<div class="Copyright">
+    <p>Thanks for visiting my Website.</p>
+    <p>Made By 2021. Dongwoo Yu.</p>
+    </div>
 </footer>
 </section>
 

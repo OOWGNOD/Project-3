@@ -1,3 +1,4 @@
+@import url('https://rsms.me/inter/inter.css');
 /*!
  * fullPage 2.9.7
  * https://github.com/alvarotrigo/fullPage.js
@@ -5,6 +6,8 @@
  *
  * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
  */
+body {font-family: 'Noto Sans KR', Arial, "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", "Nanum Gothic", Dotum, '돋움', Helvetica, sans-serif; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
 html.fp-enabled,
 .fp-enabled body {
     margin: 0;
@@ -97,8 +100,9 @@ html.fp-enabled,
     z-index: 100;
     margin-top: -32px;
     top: 50%;
-    opacity: 1;
+    opacity: 0;
     -webkit-transform: translate3d(0,0,0);
+    transition: 2s;
 }
 #fp-nav.right {
     right: 17px;
@@ -128,12 +132,13 @@ html.fp-enabled,
   margin: 0;
   padding: 0;
 }
+
 #fp-nav ul li,
 .fp-slidesNav ul li {
     display: block;
     width: 14px;
     height: 13px;
-    margin: 7px;
+    margin: 17px;
     position:relative;
 }
 .fp-slidesNav ul li {
@@ -153,23 +158,26 @@ html.fp-enabled,
 .fp-slidesNav ul li a.active span,
 #fp-nav ul li:hover a.active span,
 .fp-slidesNav ul li:hover a.active span{
-    height: 12px;
-    width: 12px;
+    height: 24px;
+    width: 24px;
+    line-height: 30px;
     margin: -6px 0 0 -6px;
-    border-radius: 100%;
+    background:url("https://img.icons8.com/external-those-icons-lineal-color-those-icons/24/000000/external-circle-circus-those-icons-lineal-color-those-icons.png");
+    background-size: contain;
+    background-repeat: no-repeat;
  }
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
-    border-radius: 50%;
     position: absolute;
     z-index: 1;
-    height: 4px;
-    width: 4px;
-    border: 0;
-    background: #fb8a00;
+    height: 12px;
+    width: 12px;
     left: 50%;
     top: 50%;
     margin: -2px 0 0 -2px;
+    background:url("https://img.icons8.com/external-those-icons-lineal-those-icons/24/000000/external-circle-circus-those-icons-lineal-those-icons.png");
+    background-size: contain;
+    background-repeat: no-repeat;
     -webkit-transition: all 0.1s ease-in-out;
     -moz-transition: all 0.1s ease-in-out;
     -o-transition: all 0.1s ease-in-out;
@@ -177,30 +185,48 @@ html.fp-enabled,
 }
 #fp-nav ul li:hover a span,
 .fp-slidesNav ul li:hover a span{
-    width: 10px;
-    height: 10px;
+    width: 24px;
+    height: 24px;
     margin: -5px 0px 0px -5px;
+    background:url("https://img.icons8.com/external-those-icons-fill-those-icons/24/000000/external-circle-circus-those-icons-fill-those-icons.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 #fp-nav ul li .fp-tooltip {
-    position: absolute;
-    top: -2px;
+    position: relative;
     color: #fff;
-    font-size: 14px;
-    font-family: arial, helvetica, sans-serif;
-    white-space: nowrap;
-    max-width: 220px;
-    overflow: hidden;
-    display: block;
+    font-size: 12px;
     opacity: 0;
-    width: 0;
     cursor: pointer;
+	background: #13a987;
+	border-radius: .4em;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+}
+#fp-nav ul li .fp-tooltip::after {
+    content: '';
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 0.594em solid transparent;
+	border-left-color: #13a987;
+	border-right: 0;
+	margin-top: -0.594em;
+	margin-right: -0.594em;
 }
 #fp-nav ul li:hover .fp-tooltip,
 #fp-nav.fp-show-active a.active + .fp-tooltip {
     -webkit-transition: opacity 0.2s ease-in;
     transition: opacity 0.2s ease-in;
-    width: auto;
+    width: 60px;
     opacity: 1;
+    padding:1em;
+    transform: translateY(-50%);
 }
 #fp-nav ul li .fp-tooltip.right {
     right: 20px;

@@ -277,7 +277,6 @@
                 }
             }
         }
-
         /**
         * Defines wheter to record the history for each hash change in the URL.
         */
