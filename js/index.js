@@ -15,7 +15,6 @@ $(function() {
 		},
 		onLeave: function(){
 			jQuery('.fp-table.active .aos-init').removeClass('aos-animate');
-
 		}
 });
 AOS.init();
@@ -268,4 +267,63 @@ $(function() {
 		});
 		AOS.init();
 	});
+	$(function() {
+
+		$(".btn_open1").click(function() { 
+			$(".popup_box1").show()
+			$("#mask").fadeIn(100)
+			$("body").css("overflow","hidden");
+		 }); 
+		 $(".btn_close").click(function() { 
+			 $(".popup_box").hide()
+			 $("#mask").fadeOut(100)
+			 $("#fullpage").removeClass("hidden");
+		 });
+			 var $layerPopup = $(".popup_box1"); 
+			 var left = ($(window).scrollLeft() + ($(window).width() - $layerPopup.width()) / 2);
+			 var top = ($(window).scrollTop() + ($(window).height() - $layerPopup.height()) / 2 ); 
+			 $layerPopup.css({ "left": left, "top":top, "position": "absolute" }); 
+			 $("body").css("position", "relative").append($layerPopup);
+
+			 });
+
+			 $(function() {
+
+				$(".btn_open2").click(function() { 
+					$(".popup_box2").show()
+					$("#mask").fadeIn(100)
+					$("body").css("overflow","hidden");
+				 }); 
+				 $(".btn_close").click(function() { 
+					 $(".popup_box").hide()
+					 $("#mask").fadeOut(100)
+					 $("#fullpage").removeClass("hidden");
+				 });
+					 var $layerPopup = $(".popup_box2"); 
+					 var left = ($(window).scrollLeft() + ($(window).width() - $layerPopup.width()) / 2);
+					 var top = ($(window).scrollTop() + ($(window).height() - $layerPopup.height()) / 2 ); 
+					 $layerPopup.css({ "left": left, "top":top, "position": "absolute" }); 
+					 $("body").css("position", "relative").append($layerPopup);
+		
+					 });
+					 $(function() {
+
+						$(".btn_open3").click(function() { 
+							$(".popup_box3").show()
+							$("#mask").fadeIn(100)
+							$("body").css("overflow","hidden");
+						 }); 
+						 $(".btn_close").click(function() { 
+							 $(".popup_box").hide()
+							 $("#mask").fadeOut(100)
+							 $("#fullpage").removeClass("hidden");
+						 });
+							 var $layerPopup = $(".popup_box3"); 
+							 var left = ($(window).scrollLeft() + ($(window).width() - $layerPopup.width()) / 2);
+							 var top = ($(window).scrollTop() + ($(window).height() - $layerPopup.height()) / 2 ); 
+							 $layerPopup.css({ "left": left, "top":top, "position": "absolute" }); 
+							 $("body").css("position", "relative").append($layerPopup);
+				
+							 });
+
 
