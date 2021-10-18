@@ -277,7 +277,7 @@ $(function() {
 	$(".btn_close").click(function() { 
 		$(".popup_box").hide()
 		$("#mask").fadeOut(100)
-		$("#fullpage").removeClass("hidden");
+		$("body").removeClass("overflow","scroll");
 	});
 		var $layerPopup = $(".popup_box1"); 
 		var left = ($(window).scrollLeft() + ($(window).width() - $layerPopup.width()) / 2);
@@ -297,7 +297,7 @@ $(function() {
 			$(".btn_close").click(function() { 
 				$(".popup_box").hide()
 				$("#mask").fadeOut(100)
-				$("#fullpage").removeClass("hidden");
+				$("body").removeClass("overflow","scroll");
 			});
 				var $layerPopup = $(".popup_box2"); 
 				var left = ($(window).scrollLeft() + ($(window).width() - $layerPopup.width()) / 2);
@@ -316,7 +316,7 @@ $(function() {
 					$(".btn_close").click(function() { 
 						$(".popup_box").hide()
 						$("#mask").fadeOut(100)
-						$("#fullpage").removeClass("hidden");
+						$("body").removeClass("overflow","scroll");
 					});
 						var $layerPopup = $(".popup_box3"); 
 						var left = ($(window).scrollLeft() + ($(window).width() - $layerPopup.width()) / 2);
