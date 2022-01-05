@@ -523,16 +523,20 @@ color: #2c3e50;
 }
 .mid-work{
   position:relative;
-  display:flex;
-  justify-content: space-around;
   width:100%;
   height: 100%;
-  align-items: center;
   text-align: center;
   background: url('../img/bg-2.gif') no-repeat;
   background-size: cover;
 }
-
+.mid-work-inner{
+  position:relative;
+  height: 100%;
+  /* width: 50%; */
+  display:flex;
+  align-items: center;
+  justify-content:center;
+}
 .my_img{
   margin: 0 auto;
   width:200px;
@@ -547,14 +551,9 @@ color: #2c3e50;
 }
 .Education{
   display:flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-  position: absolute;
-  left:20%;
-  min-height: 500px;
-  width: 30%;
-  margin:0 auto;
+  min-width: 600px;
+  padding:3rem;
   background: rgba( 255, 255, 255, 0.25 );
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 4px );
@@ -562,6 +561,7 @@ color: #2c3e50;
   border: 1px solid rgba( 255, 255, 255, 0.18 );
   font-size: 1.3rem;
   color:#efefef;
+  margin:0 auto;
 }
 .Eduinner{
   backdrop-filter: blur(16px) saturate(180%);
@@ -571,7 +571,7 @@ color: #2c3e50;
   border: 1px solid rgba(255, 255, 255, 0.125);
   padding: 10px 0 10px 0;
   margin-top:20px;
-  width:40rem;
+  /* width:30rem; */
 }
 .Education p{
   color:#e7e9f2;
@@ -601,7 +601,7 @@ color: #2c3e50;
   border: 1px solid rgba( 255, 255, 255, 0.18 );
   margin-bottom: 2rem;
   padding:1rem 1rem 2rem 2rem;
-  min-width: 400px;
+  min-width: 600px;
   min-height: 100px;
   display:block;
   align-items: center;
@@ -621,10 +621,7 @@ color: #2c3e50;
 .j-list-all{
   text-align: left;
   line-height: 5rem;
-  position:absolute;
   margin: 0 auto;
-  top:50%; left:70%;
-  transform: translate(-50% , -50%);
 }
 .j-list p{
   display:inline-flex;
@@ -682,6 +679,7 @@ color: #2c3e50;
 
 
 }
+
 .workimg-box3{
   background: url('../img/pfo3.png')no-repeat;
   background-size: cover;
@@ -701,7 +699,7 @@ color: #2c3e50;
 
 .quotes .box{
 position: relative;
-width: 70vh;
+width: 100vh;
 height: 20vh;
 overflow: hidden;
 transition: all 0.5s ease-in;
@@ -754,7 +752,6 @@ text-align: center;
 font-size: 1.75rem;
 border: none;
 padding: 8px 26px;
-color: #1f2026;
 font-weight: 500;
 }
 
@@ -784,16 +781,18 @@ background: -webkit-linear-gradient(-45deg, #e2a9e551 15%,#2b94e551 100%);
 background: linear-gradient(135deg, #e2a9e551 15%,#2b94e551 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2a9e5', endColorstr='#2b94e5',GradientType=1 );
 }
-
 .quotes .box.box2:hover,
-.quotes .box.box2:hover~.bg {
+.quotes .box.box2:hover~.bg{
 opacity: 1;
 background: -moz-linear-gradient(-45deg, #2c654c51 15%, #89e25651 100%);
 background: -webkit-linear-gradient(-45deg, #2c654c51 15%,#89e25651 100%);
 background: linear-gradient(135deg, #2c654c51 15%,#89e25651 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#632c6551', endColorstr='#56a5e251',GradientType=1 );
 }
-
+.quotes .box.box2:hover,
+.quotes .box.box2:hover~.ch-white{
+  color:#fff;
+}
 .quotes .box.box3:hover,
 .quotes .box.box3:hover~.bg {
 opacity: 1;
@@ -1529,14 +1528,14 @@ padding-right:30px;
 }
 .Education{
   flex-direction: row;
-  width:600px;
+  max-width:600px;
   min-height: 200px;
   transform: translate(0%,0%);
   top:13%;
   padding:20px;
 }
 .Eduinner{
-  margin:0 20px 0 20px ;
+  margin:0 10px 0 10px ;
 }
 .j-list-all{
   display:grid;
@@ -1544,7 +1543,7 @@ padding-right:30px;
   flex-direction: row;
   top:70%;
   left:50%;
-  width:650px;
+  max-width:600px;
 }
 .j-list p {
   color:#191919;
@@ -1721,26 +1720,29 @@ font-size: 4em;
   text-align: center;
 }
 .mid-work{
-  justify-content: center;
-  align-items: center;
+  display:flex;
 }
 .Education{
-  flex-direction: row-reverse;
+  display:flex;
+  flex-direction: row;
   width:750px;
   min-height: 200px;
   transform: translate(0%,0%);
-  top:15%;
+  top:10%;
+  left:19.8%;
   padding:20px;
 }
 .Eduinner{
   margin:10px 20px 10px 20px ;
 }
 .j-list-all{
-  display:grid;
+  display:flex;
   flex-wrap: wrap;
   flex-direction: row;
   top:70%;
-  left:50%;
+  left:46.555%;
+}
+.j-list{
   width:750px;
 }
 .j-list p {
@@ -1771,5 +1773,9 @@ footer{
 .ft-right > div > h2{
   width: 600px;
 font-size: 4em;
+}
+}
+@media (max-width:1562px){
+.Education{
 }
 }

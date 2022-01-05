@@ -9,7 +9,6 @@ $('#fullpage').fullpage({
 	navigationTooltips: ['Main','About', 'Skills','Projects','Contact'],
 	loopBottom: true,
 	loopTop: true,
-	scrollOverflow: true,
 	afterLoad: function(){
 		jQuery('.fp-table.active .aos-init').addClass('aos-animate');
 	},
@@ -272,12 +271,17 @@ $(function() {
 	$(".btn_open1").click(function() { 
 		$(".popup_box1").show()
 		$("#mask").fadeIn(100)
-		$("body").css("overflow","hidden");
-	}); 
+		$('body').css({'overflow': 'hidden', 'height': '100%'});
+		$('body').on('scroll touchmove mousewheel', function(event) {
+  		event.preventDefault();
+  		event.stopPropagation();
+  		return false;
+});
 	$(".btn_close").click(function() { 
 		$(".popup_box").hide()
 		$("#mask").fadeOut(100)
-		$("body").removeClass("overflow","scroll");
+		$('body').css({'overflow': 'scroll', 'height': 'auto'});
+		$('body').off('scroll touchmove mousewheel');
 	});
 		var $layerPopup = $(".popup_box1"); 
 		var left = ($(window).scrollLeft() + ($(window).width() - $layerPopup.width()) / 2);
@@ -287,46 +291,59 @@ $(function() {
 
 	});
 
-	$(function() {
+});
+$(function() {
 
 	$(".btn_open2").click(function() { 
 		$(".popup_box2").show()
 		$("#mask").fadeIn(100)
-		$("body").css("overflow","hidden");
-		}); 
-		$(".btn_close").click(function() { 
-			$(".popup_box").hide()
-			$("#mask").fadeOut(100)
-			$("body").removeClass("overflow","scroll");
-		});
-			var $layerPopup = $(".popup_box2"); 
-			var left = ($(window).scrollLeft() + ($(window).width() - $layerPopup.width()) / 2);
-			var top = ($(window).scrollTop() + ($(window).height() - $layerPopup.height()) / 2 ); 
-			$layerPopup.css({ "left": left, "top":top, "position": "absolute" }); 
-			$("body").css("position", "relative").append($layerPopup);
+		$('body').css({'overflow': 'hidden', 'height': '100%'});
+		$('body').on('scroll touchmove mousewheel', function(event) {
+  		event.preventDefault();
+  		event.stopPropagation();
+  		return false;
+});
+	$(".btn_close").click(function() { 
+		$(".popup_box").hide()
+		$("#mask").fadeOut(100)
+		$('body').css({'overflow': 'scroll', 'height': 'auto'});
+		$('body').off('scroll touchmove mousewheel');
+	});
+		var $layerPopup = $(".popup_box2"); 
+		var left = ($(window).scrollLeft() + ($(window).width() - $layerPopup.width()) / 2);
+		var top = ($(window).scrollTop() + ($(window).height() - $layerPopup.height()) / 2 ); 
+		$layerPopup.css({ "left": left, "top":top, "position": "absolute" }); 
+		$("body").css("position", "relative").append($layerPopup);
 
-			});
-			$(function() {
+	});
 
-			$(".btn_open3").click(function() { 
-				$(".popup_box3").show()
-				$("#mask").fadeIn(100)
-				$("body").css("overflow","hidden");
-				}); 
-				$(".btn_close").click(function() { 
-					$(".popup_box").hide()
-					$("#mask").fadeOut(100)
-					$("body").removeClass("overflow","scroll");
-				});
-					var $layerPopup = $(".popup_box3"); 
-					var left = ($(window).scrollLeft() + ($(window).width() - $layerPopup.width()) / 2);
-					var top = ($(window).scrollTop() + ($(window).height() - $layerPopup.height()) / 2 ); 
-					$layerPopup.css({ "left": left, "top":top, "position": "absolute" }); 
-					$("body").css("position", "relative").append($layerPopup);
+});
+$(function() {
 
-					});
+	$(".btn_open3").click(function() { 
+		$(".popup_box3").show()
+		$("#mask").fadeIn(100)
+		$('body').css({'overflow': 'hidden', 'height': '100%'});
+		$('body').on('scroll touchmove mousewheel', function(event) {
+  		event.preventDefault();
+  		event.stopPropagation();
+  		return false;
+});
+	$(".btn_close").click(function() { 
+		$(".popup_box").hide()
+		$("#mask").fadeOut(100)
+		$('body').css({'overflow': 'scroll', 'height': 'auto'});
+		$('body').off('scroll touchmove mousewheel');
+	});
+		var $layerPopup = $(".popup_box3"); 
+		var left = ($(window).scrollLeft() + ($(window).width() - $layerPopup.width()) / 2);
+		var top = ($(window).scrollTop() + ($(window).height() - $layerPopup.height()) / 2 ); 
+		$layerPopup.css({ "left": left, "top":top, "position": "absolute" }); 
+		$("body").css("position", "relative").append($layerPopup);
 
+	});
 
+});
 					$(function() {
 
 					function copyToClipboard(val) {
